@@ -1,21 +1,22 @@
-package Builder;
+package PizzaBuilder;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class DominosPizza implements Pizza {
-    public final String CHAIN = "Domino's";
+public class LittleCaesarsPizza implements Pizza {
+    public final String CHAIN = "Little Caesars";
     public final Size size;
     public List<Topping> toppings;
 
-    public DominosPizza(Size size) {
+    public LittleCaesarsPizza(Size size) {
         this.size = size;
         toppings = new LinkedList<>();
     }
 
     @Override
     public void eat() {
-        System.out.println(sizeToString() + " " + CHAIN + " pizza with " + toppingsToString());
+        String eat = sizeToString() + " " + CHAIN + " pizza with " + toppingsToString();
+        System.out.println(eat);
     }
 
     @Override
