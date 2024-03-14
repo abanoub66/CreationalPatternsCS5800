@@ -2,7 +2,7 @@ import MealFactory.*;
 
 import java.util.Scanner;
 
-public class MealDriver {
+public class MealDriverUserInputVersion {
     private static final Scanner CONSOLE = new Scanner(System.in);
 
     public static void main(String[] args) {
