@@ -5,11 +5,11 @@ import java.util.List;
 
 public class LittleCaesarsPizza implements Pizza {
     public final String CHAIN = "Little Caesars";
-    public final Size size;
+    public final Size SIZE;
     public List<Topping> toppings;
 
     public LittleCaesarsPizza(Size size) {
-        this.size = size;
+        SIZE = size;
         toppings = new LinkedList<>();
     }
 
@@ -25,10 +25,10 @@ public class LittleCaesarsPizza implements Pizza {
     }
 
     private String sizeToString() {
-        if (size.equals(Size.SMALL)) {
+        if (SIZE.equals(Size.SMALL)) {
             return "Small";
         }
-        else if (size.equals(Size.MEDIUM)) {
+        else if (SIZE.equals(Size.MEDIUM)) {
             return "Medium";
         }
         else {
